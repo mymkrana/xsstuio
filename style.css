@@ -1,0 +1,232 @@
+body {
+    margin: 0;
+    font-size: 18px!important;
+    color: #8B8B8B;
+}
+.font-74 {
+    font-size: 74px;
+    font-weight: 700;
+}
+.font-48 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.text-green{
+    color: #1bb55c;
+}
+a.href {
+    color: #1bb55c;
+    font-weight: 600;
+}
+p {
+    margin-top: unset;
+    margin-bottom: unset;
+    color: #8B8B8B;
+}
+
+/* our projrct */
+.w-img {
+    width: 692px!important;
+    height: 558px;
+}
+.box-card {
+    box-shadow: 5px 5px 50px rgb(0 0 0 / 5%);
+    border-radius: 10px;
+    margin-left: -64px;
+    margin-top: 204px;
+    background: #ffffff;
+    width: 590px;
+    height: 436px;
+    padding: 85px 31px;
+}
+.box-card h5 {
+    margin-top: 40px;
+}
+.box-card img {
+    margin-bottom: 27px;
+}
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: unset!important;
+   
+    bottom: 40px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 15%;
+    color: #131313;
+    text-align: center;
+    opacity: unset!important;
+}
+.carousel-inner {
+   
+    overflow: visible!important;
+}
+.carousel-control-prev-icon {
+    background-image: url(image/left-arrow.png)!important;
+}
+.carousel-control-next-icon {
+    background-image: url(image/right-arrow.png)!important;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 24px!important;
+    height: 15px!important;
+}
+.carousel-control-next {
+    right: 428px!important;
+}
+.carousel-control-prev {
+    left: 471px!important;
+}
+
+
+/* Button style */
+
+.studio-btn {
+    width: 165px;
+    border-radius: 8px;
+    height: 45px;
+    color: #ffff;
+    font-weight: 600;
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s!important;
+}
+a.studio-btn:hover {
+    text-decoration: none;
+}
+.primary-btn{
+    background: #898989;
+}
+.primary-btn:hover{
+    background: #1bb55c;
+    color: #ffffff;
+}
+.secondary-btn{
+    border: solid 1px #898989;
+    color: #898989;
+}
+.secondary-btn:hover{
+    background: #898989;
+    color: #ffffff;
+}
+section {
+    margin: 20px 0px 70px;
+}
+
+/* Navbar style */
+.navbar-nav .nav-link {
+    color: #1BB55C;
+    font-weight: 600;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #898989;
+}
+.navbar-expand-lg .studio-btn {
+    margin-left: 13px;
+}
+
+/* hero section */
+
+.mh-4 {
+    display: table;
+    margin: 0;
+    padding: 6px!important;
+}
+.mw-4 {
+    padding-bottom: 12px;
+}
+#hero p {
+    margin: 24px 0px;
+}
+#hero a.href {
+    padding-left: 15px;
+}
+
+/* Services section */
+#services h5 {
+    color: #1bb55c;
+    font-size: 24px;
+    padding: 14px 0px;
+}
+/* Befor end counter */
+.counter {
+    text-align: center;
+    background: rgba(80, 80, 80, 0.1);
+    padding: 35px;
+    color: #898989;
+}
+.count-up {
+    padding: 4px 48px;
+    color: #898989;
+}
+
+.counter-count
+{
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    color: #898989;
+    text-align: center;
+    display: inline-block;
+}
+/* our patner */
+#our-patner img {
+    padding: 27px;
+}
+
+.bg-gree{
+    background: rgba(80, 80, 80, 0.1);
+    border-radius: 30px;
+}
+#subscribe input {
+    width: 54%;
+    height: 70px;
+    border-radius: 10px;
+    border: none;
+    padding: 27px;
+}
+#subscribe .btn.btn-default {
+    background: #898989;
+    color: white;
+    font-size: 18px;
+    padding: 10px 47px;
+}
+samp.subscribe-btn {
+    background: white;
+    padding: 24px 12px;
+    height: 70px;
+    border-radius: 9px;
+    margin: 0px 16px;
+}
+
+/* footer */
+.bg-green {
+    background-color: #1bb55c;
+    padding: 100px 0px;
+    color: white;
+}
+footer.footer_area.bg-green li {
+    list-style: none;
+    padding: 9px 0px;
+}
+footer.footer_area.bg-green a {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+.footer_menu ul {
+    padding: 0;
+}
+footer.footer_area.bg-green h5 {
+    font-size: 24px;
+}
+footer.footer_area.bg-green h3 {
+    font-size: 36px;
+}
