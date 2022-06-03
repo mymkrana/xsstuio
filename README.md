@@ -1,2 +1,2 @@
 # xsstuio
-https://xsstuio.github.io
+https://mymkrana.github.io/xsstuio/
