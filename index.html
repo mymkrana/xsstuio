@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
-    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>Hello, world!</title>
   </head>
-  <body>
+  <body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0" data-new-gr-c-s-check-loaded="14.1062.0" data-gr-ext-installed="">
 
     <!-- Start Navbar  -->
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -55,40 +56,37 @@
     <section class="pt-4 pb-0" id="hero">
         <div class="container reveal">
             <div class="row g-4 align-items-center">
-                <div class="col-lg-4">
-                    <h1 class="text-green font-74">Better home for better life</h1>
+                <div class="col-lg-4 aos-init aos-animate" data-aos="fade-right">
+                    <h1 class="text-green font-74" >Better home for better life</h1>
                     <p>We are a highly skilled architecture agency with a speciality in exterior design</p>
                     <a href="#" class="studio-btn primary-btn" type="submit">Get started</a>
                     <a href="#" class="href">How it works</a>
                 </div>
                 <div class="col-lg-8">
-                    <!--Grid row-->
-    <div class="row"> <!--Grid column-->
-        <div class="col-lg-4 col-md-6 mh-4">
+                   
+                    <div class="row"> 
+                    <div class="col-lg-4 col-md-6 mh-4">
+            
+                    <img src="image/hero-img-1.png" class="mw-4 " alt="" data-aos="flip-down">
+            
+                    <img src="image/hero-img-2.png" class="mw-4" alt=""
+                        data-wow-delay="0.4s" data-aos="flip-down">
   
-          <img src="image/hero-img-1.png" class="mw-4" alt=""
-            data-wow-delay="0.1s">
-  
-          <img src="image/hero-img-2.png" class="mw-4" alt=""
-            data-wow-delay="0.4s">
-  
-        </div>
-        <!--Grid column-->
-  
-        <!--Grid column-->
-        <div class="col-lg-4 col-md-6 mh-4">
-  
-          <img src="image/hero-img-3.png" class="mw-4" alt=""
-            data-wow-delay="0.2s">
-  
-          <img src="image/hero-img-4.png" class="mw-4" alt=""
-            data-wow-delay="0.5s">
-  
-        </div>
-        <!--Grid column-->
+                </div>
+                       
+                    <div class="col-lg-4 col-md-6 mh-4">
+            
+                    <img src="image/hero-img-3.png" class="mw-4" alt=""
+                        data-wow-delay="0.2s" data-aos="flip-down">
+            
+                    <img src="image/hero-img-4.png" class="mw-4" alt=""
+                        data-wow-delay="0.5s" data-aos="flip-down">
+            
+                    </div>
+                        
   
       </div>
-      <!--Grid row-->
+     
                 </div>
             </div>
         </div>
@@ -98,7 +96,7 @@
     
     <!-- Start Services section -->
     <section class="pt-4 pb-0" id="services">
-        <div class="container reveal">
+        <div class="container aos-init aos-animate" data-aos="fade-up">
             <div class="row align-items-center pb-5">
                 <div class="col-lg-5">
                     <h2 class="text-green font-48">What services we served for you</h2>
@@ -111,21 +109,21 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
                     <img class="logo" src="image/service-icon/architecture.svg" alt="">
                     <h5 class="title">Architecture</h5>
                     <p class="desc">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     </p>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
                     <img class="logo" src="image/service-icon/exterior-design.svg" alt="">
                     <h5 class="title">Exterior Design</h5>
                     <p class="desc">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     </p>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300">
                     <img class="logo" src="image/service-icon/interior-design.svg" alt="">
                     <h5 class="title">Interior Design</h5>
                     <p class="desc">
@@ -142,7 +140,7 @@
     <section id="About">
         <div class="container reveal">
             <div class="row align-items-center">
-                <div class="col-lg-4">
+                <div class="col-lg-4" data-aos="fade-right">
                     <h2 class="text-green font-48">
                         Our Story Documentation
                     </h2>
@@ -151,7 +149,7 @@
                     </p>
                     <a href="#" class="studio-btn primary-btn">See More</a>
                 </div>
-                <div class="col-lg-8">
+                <div class="col-lg-8 aos-init aos-animate" data-aos="fade-left">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 mh-4">
                             <img class="img-fluid mw-4" src="image/story-img-1.png" alt="">
@@ -180,9 +178,9 @@
                   <div class="carousel-item active">
                    
                         <div class="d-flex">
-                            <img class="d-block w-img" src="image//project-com-1.png" alt="First slide">
+                            <img class="d-block w-img" src="image//project-com-1.png" alt="First slide" data-aos="fade-right">
                         
-                            <div class=" box-card">
+                            <div class=" box-card" data-aos="fade-left">
                                 <img src="image/vrticom.png" alt="">
                                 <p>As people who own a house for the first time, we are very satisfied with the performance of XY Studio. highly recommend to anyone who wants to have a beautiful and comfortable home</p>
                                 <h5>Ludwig</h5>
@@ -196,7 +194,7 @@
                         <div class="d-flex">
                             <img class="d-block w-img" src="image/project-com-2.png" alt="Second slide">
                        
-                            <div class="box-card">
+                            <div class="box-card" data-aos="fade-right">
                                 <img src="image/vrticom.png" alt="">
                                 <p>As people who own a house for the first time, we are very satisfied with the performance of XY Studio. highly recommend to anyone who wants to have a beautiful and comfortable home</p>
                                 <h5>Ramveer</h5>
@@ -209,9 +207,9 @@
                   <div class="carousel-item">
                     
                         <div class="d-flex">
-                            <img class="d-block w-img" src="image/project-com-3.png" alt="Third slide">
+                            <img class="d-block w-img" src="image/project-com-3.png" alt="Third slide" data-aos="fade-left">
                         
-                            <div class=" box-card">
+                            <div class=" box-card" data-aos="fade-right">
                                 <img src="image/vrticom.png" alt="">
                                 <p>As people who own a house for the first time, we are very satisfied with the performance of XY Studio. highly recommend to anyone who wants to have a beautiful and comfortable home</p>
                                 <h5>Luxman</h5>
@@ -237,14 +235,14 @@
 
     <!-- Before end of the promo -->
     <section id="before-end">
-        <div class="container reveal">
+        <div class="container aos-init aos-animate" data-aos="fade-up">
             <div class="text-center">
                 <h2 class="text-green font-48">Before end of<br>the promo</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing<br>elit, sed do eiusmod tempor incididunt ut</p>
             </div>
         </div>
         <div class="counter">
-            <div class="container reveal">
+            <div class="container" data-aos="fade-up">
                 <div class="row d-flex justify-content-center ">
                     
                         <div class="count-up">
@@ -281,7 +279,7 @@
 
     <!-- Our patner -->
     <section id="our-patner">
-        <div class="container reveal">
+        <div class="container" data-aos="fade-up">
             <div class="row align-items-center">
                 <div class="col-lg-4">
                     <h2 class="text-green font-48">Our lovely partner</h2>
@@ -302,7 +300,7 @@
     <!-- End Our patner -->
     <!--Start Subscribe Section -->
     <section id="subscribe">
-        <div class="container reveal">
+        <div class="container aos-init aos-animate" data-aos="fade-up">
             <div class="text-center">
                 <h2 class="text-green font-48">Get the best offer from<br>us for you</h2>
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedLorem ipsum dolor sit amet,<br>consectetur adipiscing elit, sedLorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
@@ -409,31 +407,15 @@
             }
         });
     });
-
-
-    // animation 
-    function reveal() {
-  var reveals = document.querySelectorAll(".reveal");
-
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 150;
-
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
-    } else {
-      reveals[i].classList.remove("active");
-    }
-  }
-}
-
-window.addEventListener("scroll", reveal);
     </script>
+    <script>
+        AOS.init();
+      </script>
     
    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
