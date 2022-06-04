@@ -107,6 +107,7 @@ a.studio-btn:hover {
 .primary-btn:hover{
     background: #1bb55c;
     color: #ffffff;
+    transform: scale(.9);
 }
 .secondary-btn{
     border: solid 1px #898989;
@@ -115,6 +116,7 @@ a.studio-btn:hover {
 .secondary-btn:hover{
     background: #898989;
     color: #ffffff;
+    transform: scale(.9);
 }
 section {
     margin: 20px 0px 70px;
@@ -155,6 +157,10 @@ section {
     font-size: 24px;
     padding: 14px 0px;
 }
+#services img:hover {
+    transform: scale(.9);
+    transition: 1s;
+}
 /* Befor end counter */
 .counter {
     text-align: center;
@@ -192,11 +198,16 @@ section {
     border: none;
     padding: 27px;
 }
+
 #subscribe .btn.btn-default {
     background: #898989;
     color: white;
     font-size: 18px;
     padding: 10px 47px;
+    transition: 0.5s!important;
+}
+#subscribe .btn.btn-default:hover {
+    background: #1bb55c;
 }
 samp.subscribe-btn {
     background: white;
@@ -204,6 +215,7 @@ samp.subscribe-btn {
     height: 70px;
     border-radius: 9px;
     margin: 0px 16px;
+    
 }
 
 /* footer */
@@ -230,3 +242,54 @@ footer.footer_area.bg-green h5 {
 footer.footer_area.bg-green h3 {
     font-size: 36px;
 }
+
+
+
+.reveal {
+    position: relative;
+    opacity: 0;
+  }
+  
+  .reveal.active {
+    opacity: 1;
+  }
+  .active.fade-bottom {
+    animation: fade-bottom 1s ease-in;
+  }
+  .active.fade-left {
+    animation: fade-left 1s ease-in;
+  }
+  .active.fade-right {
+    animation: fade-right 1s ease-in;
+  }
+  @keyframes fade-bottom {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-left {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-right {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
