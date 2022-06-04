@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-size: 18px!important;
     color: #8B8B8B;
+    overflow-x: hidden;
 }
 .font-74 {
     font-size: 74px;
