@@ -17,7 +17,7 @@
 
     <!-- Start Navbar  -->
         <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
+        <div class="container reveal">
             <a class="navbar-brand" href="#">
                 <img src="image/logo/xy_logo.png" width="109" height="40" alt="xy-logo">
             </a>
@@ -53,7 +53,7 @@
 
     <!-- Start Hero Section -->
     <section class="pt-4 pb-0" id="hero">
-        <div class="container">
+        <div class="container reveal">
             <div class="row g-4 align-items-center">
                 <div class="col-lg-4">
                     <h1 class="text-green font-74">Better home for better life</h1>
@@ -98,7 +98,7 @@
     
     <!-- Start Services section -->
     <section class="pt-4 pb-0" id="services">
-        <div class="container">
+        <div class="container reveal">
             <div class="row align-items-center pb-5">
                 <div class="col-lg-5">
                     <h2 class="text-green font-48">What services we served for you</h2>
@@ -140,7 +140,7 @@
 
     <!-- Start Our Story section -->
     <section id="About">
-        <div class="container">
+        <div class="container reveal">
             <div class="row align-items-center">
                 <div class="col-lg-4">
                     <h2 class="text-green font-48">
@@ -174,7 +174,7 @@
 
     <!-- Start project completed -->
     <section id="project-complete">
-        <div class="container">
+        <div class="container reveal">
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -237,14 +237,14 @@
 
     <!-- Before end of the promo -->
     <section id="before-end">
-        <div class="container">
+        <div class="container reveal">
             <div class="text-center">
                 <h2 class="text-green font-48">Before end of<br>the promo</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing<br>elit, sed do eiusmod tempor incididunt ut</p>
             </div>
         </div>
         <div class="counter">
-            <div class="container">
+            <div class="container reveal">
                 <div class="row d-flex justify-content-center ">
                     
                         <div class="count-up">
@@ -281,7 +281,7 @@
 
     <!-- Our patner -->
     <section id="our-patner">
-        <div class="container">
+        <div class="container reveal">
             <div class="row align-items-center">
                 <div class="col-lg-4">
                     <h2 class="text-green font-48">Our lovely partner</h2>
@@ -302,7 +302,7 @@
     <!-- End Our patner -->
     <!--Start Subscribe Section -->
     <section id="subscribe">
-        <div class="container">
+        <div class="container reveal">
             <div class="text-center">
                 <h2 class="text-green font-48">Get the best offer from<br>us for you</h2>
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedLorem ipsum dolor sit amet,<br>consectetur adipiscing elit, sedLorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
@@ -326,7 +326,7 @@
    
     <!-- Footer -->
     <footer class="footer_area bg-green">
-        <div class="container">
+        <div class="container reveal">
           <div class="row">
             <!-- Single Widget-->
             <div class="col-12 col-sm-6 col-lg-4">
@@ -409,6 +409,26 @@
             }
         });
     });
+
+
+    // animation 
+    function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
     </script>
     
    
