@@ -16,29 +16,98 @@ body {
 .text-green{
     color: #1bb55c;
 }
-a.href {
-    color: #1bb55c;
-    font-weight: 600;
-}
+
+
 p {
     margin-top: unset;
     margin-bottom: unset;
     color: #8B8B8B;
 }
 
+@media screen and (max-width: 1100px) {
+    .font-74 {
+        font-size: 54px;
+        font-weight: 700;
+    }
+    .font-48 {
+        font-size: 36px;
+        font-weight: 700;
+    } 
+    .studio-btn {
+        width: 145px!important;
+    }
+    #our-patner img {
+        padding: 19px;
+    }
+   
+}
+
+/* hero section */
+#hero p {
+    margin: 24px 0px;
+}
+a.link-xy {
+    color: #1bb55c;
+    font-weight: 600;
+}
+#hero a.link-xy {
+    padding-left: 15px;
+}
+#hero a.link-xy:hover {
+    color: #898989;
+}
+.outer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    }
+    .inner-grid {
+    flex: 25%;
+    }
+    .inner-grid img {
+        width: 100%;
+        padding: 6px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+    .img-1{
+        height:190px;
+    }
+    .img-2{
+        height:280px;
+    }
+    .img-3{
+        height:315px;
+    }
+    .img-4{
+        height:155px;
+    }
+    @media screen and (max-width: 800px) {
+    .inner-grid {
+    flex: 50%;
+    max-width: 50%;
+    }
+    }
+    @media screen and (max-width: 600px) {
+    .inner-grid {
+    flex: 50%;
+    max-width: 100%;
+    }
+    }
+
 /* our projrct */
 .w-img {
-    width: 692px!important;
-    height: 558px;
+    width: 60%;
+    height: 450px;
 }
 .box-card {
     box-shadow: 5px 5px 50px rgb(0 0 0 / 5%);
     border-radius: 10px;
-    margin-left: -64px;
-    margin-top: 204px;
+    margin-left: -6%;
+    margin-top: 116px;
     background: #ffffff;
-    width: 590px;
-    height: 436px;
+    width: 46%;
+    height: 400px;
     padding: 85px 31px;
 }
 .box-card h5 {
@@ -47,6 +116,25 @@ p {
 .box-card img {
     margin-bottom: 27px;
 }
+.project-slider {
+    display: flex;
+}
+@media screen and (max-width: 600px) {
+    .project-slider {
+        display:block;
+    } 
+    .w-img {
+        width: 100%;
+        height: unset;
+    }
+    .box-card {
+        margin-left: 0%;
+        margin-top: -37px; width: 100%;
+        height: auto;
+        padding: 15px 31px;
+    }
+}
+
 .carousel-control-next, .carousel-control-prev {
     position: absolute;
     top: unset!important;
@@ -77,11 +165,16 @@ p {
     width: 24px!important;
     height: 15px!important;
 }
-.carousel-control-next {
-    right: 428px!important;
+.next-pre-btn {
+    display: flex;
+    place-content: center;
 }
 .carousel-control-prev {
-    left: 471px!important;
+    left: auto!important;
+    margin-left: -76px;
+}
+.carousel-control-next {
+    right: auto!important;
 }
 
 
@@ -125,32 +218,20 @@ section {
 
 /* Navbar style */
 .navbar-nav .nav-link {
-    color: #1BB55C;
+    color: #1BB55C!important;
     font-weight: 600;
 }
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-    color: #898989;
+    color: #898989!important;
 }
+
 .navbar-expand-lg .studio-btn {
     margin-left: 13px;
 }
+.navbar-nav .nav-link:hover {
+    color: #898989!important;
+}
 
-/* hero section */
-
-.mh-4 {
-    display: table;
-    margin: 0;
-    padding: 6px!important;
-}
-.mw-4 {
-    padding-bottom: 12px;
-}
-#hero p {
-    margin: 24px 0px;
-}
-#hero a.href {
-    padding-left: 15px;
-}
 
 /* Services section */
 #services h5 {
@@ -182,6 +263,22 @@ section {
     color: #898989;
     text-align: center;
     display: inline-block;
+}
+@media screen and (max-width: 600px) {
+    .counter-count {
+        font-size: 31px;
+    }
+    .count-up {
+        padding: 4px 8px;
+    }
+    #subscribe input {
+        width: 90%!important;
+        height: 70px;
+        border-radius: 10px;
+        border: none;
+        padding: 27px;
+        margin-bottom: 26px;
+    }
 }
 /* our patner */
 #our-patner img {
@@ -243,6 +340,8 @@ footer.footer_area.bg-green h5 {
 footer.footer_area.bg-green h3 {
     font-size: 36px;
 }
+
+
 
 
 
